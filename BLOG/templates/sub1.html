@@ -1,0 +1,10 @@
+{% extends 'layout.html' %} {% block content %}
+<div class="all-posts">
+    {% for po in posts %}
+    <div class="submited" contenteditable="true">
+        <h4>{{po[0]}}</h4>
+        <p>{{po[1]}}</p>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}

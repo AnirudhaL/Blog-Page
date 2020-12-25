@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>The Blog</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='blog_1.css' ) }} " />
+</head>
+
+<body>
+    <!-- <img src="bg.jpg" alt="bgi" width="300" height="300"> -->
+    <div class="nav-bar">
+        <div>FEEL FREE</div>
+    </div>
+    <form action="#" method="POST">
+        <div class="text-box">
+            <textarea type="text" name="big" id="bt" cols="10" rows="10"></textarea>
+            <input type="text" name="small" id="sender-name" placeholder="Publish this blog in this name">
+            <input type="submit" value="PUBLISH" id="publish">
+        </div>
+    </form>
+    <div id="submited">
+        {% block content %} {% endblock %}
+    </div>
+</body>
+
+</html>
